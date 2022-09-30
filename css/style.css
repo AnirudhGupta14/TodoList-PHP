@@ -1,0 +1,227 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+  }
+  
+.box{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px 0px;
+}
+
+.heading{
+    text-align: center;
+    color: blue;
+}
+
+.add-task{
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    color: green;
+    font-weight: bold;
+}
+
+#addForm div{
+    padding: 8px 0px;
+}
+
+#edit-form div{
+    padding: 8px 0px;
+}
+
+#edit-form input{
+    margin: 8px 0px;
+}
+
+#edit-form{
+    color: green;
+    font-weight: bold;
+}
+
+input{
+    font-family: cursive;
+    font-size: medium;
+}
+
+.task-name input{
+    width: 40%;
+    height: 30px;
+}
+
+.task-detail input{
+    height: 30px;
+    width: 80%;
+}
+  
+#save-button{
+    width: 10%;
+    height: 30px;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#edit-submit{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+#edit-submit:hover
+{
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.task-list{
+    width: 80%;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.task{
+    width: 90%;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+}
+
+.task h3{
+    color: darkblue;
+    font-size: 3vmin;
+}
+
+.task p{
+    color: orange;
+    font-size: 2vmin;
+}
+
+.task span{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task span button{
+    height: 30px;
+    width: 60px;
+    font-family: cursive;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.task-head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-head p{
+    color: black;
+}
+
+.edit-btn{
+    background-color: greenyellow;  
+}
+
+.delete-btn{
+    background-color: red;
+}
+
+.detail-btn{
+    background-color: green;
+}
+
+.edit-btn:hover{
+    background-color: white;
+    color: greenyellow;
+    border: 2px solid greenyellow;  
+}
+
+.delete-btn:hover{
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}
+
+.detail-btn:hover{
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+}
+
+#success-message{
+    background: #DEF1D8;
+    color: green;
+    padding: 10px;
+    margin: 10px;
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  #error-message{
+    background: #EFDCDD;
+    color: red;
+    padding: 10px;
+    margin: 10px;
+    display: none;
+    position:absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  #modal{
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+  }
+  #modal-form{
+    background: #fff;
+    width: 30%;
+    position: relative;
+    top: 20%;
+    left: calc(50% - 15%);
+    padding: 15px;
+    border-radius: 4px;
+  }
+  #modal-form input
+  {
+    width: 100%;
+    font-family: cursive;
+  }
+
+  #close-btn{
+    background: red;
+    color: white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+  }
